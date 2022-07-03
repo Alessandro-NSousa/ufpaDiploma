@@ -1,0 +1,33 @@
+{
+  "diplomaApp": {
+    "processo": {
+      "home": {
+        "title": "Processos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Processo",
+        "createOrEditLabel": "Create or edit a Processo",
+        "notFound": "No Processos found"
+      },
+      "created": "A new Processo is created with identifier {{ param }}",
+      "updated": "A Processo is updated with identifier {{ param }}",
+      "deleted": "A Processo is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Processo {{ id }}?"
+      },
+      "detail": {
+        "title": "Processo"
+      },
+      "id": "ID",
+      "statusProcesso": "Status Processo",
+      "matricula": "Matricula",
+      "nome": "Nome",
+      "data": "Data",
+      "numeroDaDefesa": "Numero Da Defesa",
+      "statusSigaa": "Status Sigaa",
+      "numeroSipac": "Numero Sipac",
+      "enviadoBiblioteca": "Enviado Biblioteca",
+      "turma": "Turma",
+      "entregaDiploma": "Entrega Diploma"
+    }
+  }
+}

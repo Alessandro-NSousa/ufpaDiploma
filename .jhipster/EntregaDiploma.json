@@ -1,0 +1,25 @@
+{
+  "applications": "*",
+  "changelogDate": "20220703024455",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "entrega_diploma",
+  "fields": [
+    {
+      "fieldName": "dataDeEntrega",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "observacoes",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EntregaDiploma",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

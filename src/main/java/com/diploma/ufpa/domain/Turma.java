@@ -1,0 +1,99 @@
+package com.diploma.ufpa.domain;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+/**
+ * A Turma.
+ */
+@Entity
+@Table(name = "turma")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+public class Turma implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
+    @SequenceGenerator(name = "sequenceGenerator")
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "curso")
+    private String curso;
+
+    @Column(name = "ano")
+    private String ano;
+
+    // jhipster-needle-entity-add-field - JHipster will add fields here
+
+    public Long getId() {
+        return this.id;
+    }
+
+    public Turma id(Long id) {
+        this.setId(id);
+        return this;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCurso() {
+        return this.curso;
+    }
+
+    public Turma curso(String curso) {
+        this.setCurso(curso);
+        return this;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public String getAno() {
+        return this.ano;
+    }
+
+    public Turma ano(String ano) {
+        this.setAno(ano);
+        return this;
+    }
+
+    public void setAno(String ano) {
+        this.ano = ano;
+    }
+
+    // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Turma)) {
+            return false;
+        }
+        return id != null && id.equals(((Turma) o).id);
+    }
+
+    @Override
+    public int hashCode() {
+        // see https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
+        return getClass().hashCode();
+    }
+
+    // prettier-ignore
+    @Override
+    public String toString() {
+        return "Turma{" +
+            "id=" + getId() +
+            ", curso='" + getCurso() + "'" +
+            ", ano='" + getAno() + "'" +
+            "}";
+    }
+}

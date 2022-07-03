@@ -1,0 +1,9 @@
+{
+  "diplomaApp": {
+    "StatusProcesso": {
+      "null": "",
+      "PENDENTE": "PENDENTE",
+      "CONCLUIDO": "CONCLUIDO"
+    }
+  }
+}

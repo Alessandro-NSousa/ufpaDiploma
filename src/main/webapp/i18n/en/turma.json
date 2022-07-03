@@ -1,0 +1,25 @@
+{
+  "diplomaApp": {
+    "turma": {
+      "home": {
+        "title": "Turmas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Turma",
+        "createOrEditLabel": "Create or edit a Turma",
+        "notFound": "No Turmas found"
+      },
+      "created": "A new Turma is created with identifier {{ param }}",
+      "updated": "A Turma is updated with identifier {{ param }}",
+      "deleted": "A Turma is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Turma {{ id }}?"
+      },
+      "detail": {
+        "title": "Turma"
+      },
+      "id": "ID",
+      "curso": "Curso",
+      "ano": "Ano"
+    }
+  }
+}
