@@ -22,6 +22,7 @@ describe('Turma Service', () => {
     elemDefault = {
       id: 0,
       curso: 'AAAAAAA',
+      sigla: 'AAAAAAA',
       ano: 'AAAAAAA',
     };
   });
@@ -59,6 +60,7 @@ describe('Turma Service', () => {
         {
           id: 1,
           curso: 'BBBBBB',
+          sigla: 'BBBBBB',
           ano: 'BBBBBB',
         },
         elemDefault
@@ -92,6 +94,7 @@ describe('Turma Service', () => {
         {
           id: 1,
           curso: 'BBBBBB',
+          sigla: 'BBBBBB',
           ano: 'BBBBBB',
         },
         elemDefault
@@ -144,7 +147,7 @@ describe('Turma Service', () => {
       });
 
       it('should add only unique Turma to an array', () => {
-        const turmaArray: ITurma[] = [{ id: 123 }, { id: 456 }, { id: 5101 }];
+        const turmaArray: ITurma[] = [{ id: 123 }, { id: 456 }, { id: 21478 }];
         const turmaCollection: ITurma[] = [{ id: 123 }];
         expectedResult = service.addTurmaToCollectionIfMissing(turmaCollection, ...turmaArray);
         expect(expectedResult).toHaveLength(3);

@@ -18,6 +18,7 @@ export class TurmaUpdateComponent implements OnInit {
   editForm = this.fb.group({
     id: [],
     curso: [],
+    sigla: [],
     ano: [],
   });
 
@@ -66,6 +67,7 @@ export class TurmaUpdateComponent implements OnInit {
     this.editForm.patchValue({
       id: turma.id,
       curso: turma.curso,
+      sigla: turma.sigla,
       ano: turma.ano,
     });
   }
@@ -75,6 +77,7 @@ export class TurmaUpdateComponent implements OnInit {
       ...new Turma(),
       id: this.editForm.get(['id'])!.value,
       curso: this.editForm.get(['curso'])!.value,
+      sigla: this.editForm.get(['sigla'])!.value,
       ano: this.editForm.get(['ano'])!.value,
     };
   }
