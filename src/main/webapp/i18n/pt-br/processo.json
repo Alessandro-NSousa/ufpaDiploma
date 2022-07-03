@@ -4,27 +4,27 @@
       "home": {
         "title": "Processos",
         "refreshListLabel": "Atualizar lista",
-        "createLabel": "Criar novo Processo",
-        "createOrEditLabel": "Criar ou editar Processo",
+        "createLabel": "Cadastrar novo Processo",
+        "createOrEditLabel": "Cadastrar ou alterar dados do Processo",
         "notFound": "Nenhum Processo encontrado"
       },
-      "created": "Um novo Processo foi criado com o identificador {{ param }}",
-      "updated": "Um Processo foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Processo foi excluído com o identificador {{ param }}",
+      "created": "Um novo Processo foi cadastrado",
+      "updated": "Processo foi atualizado",
+      "deleted": "Um Processo foi excluído",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Processo {{ id }}?"
+        "question": "Tem certeza de que deseja excluir o Processo selecionado ?"
       },
       "detail": {
-        "title": "Processo"
+        "title": "Processos"
       },
       "id": "ID",
       "statusProcesso": "Status Processo",
-      "matricula": "Matricula",
+      "matricula": "Matrícula",
       "nome": "Nome",
       "data": "Data",
-      "numeroDaDefesa": "Numero Da Defesa",
+      "numeroDaDefesa": "Número Da Defesa",
       "statusSigaa": "Status Sigaa",
-      "numeroSipac": "Numero Sipac",
+      "numeroSipac": "Número Sipac",
       "enviadoBiblioteca": "Enviado Biblioteca",
       "turma": "Turma",
       "entregaDiploma": "Entrega Diploma"

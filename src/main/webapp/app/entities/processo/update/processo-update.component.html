@@ -30,7 +30,7 @@
         </div>
 
         <div class="row mb-3">
-          <label class="form-label" jhiTranslate="diplomaApp.processo.matricula" for="field_matricula">Matricula</label>
+          <label class="form-label" for="field_matricula">Matrícula</label>
           <input type="text" class="form-control" name="matricula" id="field_matricula" data-cy="matricula" formControlName="matricula" />
           <div *ngIf="editForm.get('matricula')!.invalid && (editForm.get('matricula')!.dirty || editForm.get('matricula')!.touched)">
             <small

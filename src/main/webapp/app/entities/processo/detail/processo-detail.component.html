@@ -18,11 +18,11 @@
         <dd>
           <span jhiTranslate="{{ 'diplomaApp.StatusProcesso.' + processo.statusProcesso }}">{{ processo.statusProcesso }}</span>
         </dd>
-        <dt><span jhiTranslate="diplomaApp.processo.matricula">Matricula</span></dt>
+        <dt><span>Matrícula</span></dt>
         <dd>
           <span>{{ processo.matricula }}</span>
         </dd>
-        <dt><span jhiTranslate="diplomaApp.processo.nome">Nome</span></dt>
+        <dt><span>Nome Discente</span></dt>
         <dd>
           <span>{{ processo.nome }}</span>
         </dd>
@@ -49,7 +49,7 @@
         <dt><span jhiTranslate="diplomaApp.processo.turma">Turma</span></dt>
         <dd>
           <div *ngIf="processo.turma">
-            <a [routerLink]="['/turma', processo.turma?.id, 'view']">{{ processo.turma?.ano }}</a>
+            <a [routerLink]="['/turma', processo.turma?.id, 'view']">{{ processo.turma?.sigla }} - {{ processo.turma?.ano }}</a>
           </div>
         </dd>
         <dt><span jhiTranslate="diplomaApp.processo.entregaDiploma">Entrega Diploma</span></dt>

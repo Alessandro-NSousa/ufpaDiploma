@@ -34,13 +34,9 @@
         <tr>
           <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
           <th scope="col"><span jhiTranslate="diplomaApp.processo.statusProcesso">Status Processo</span></th>
-          <th scope="col"><span jhiTranslate="diplomaApp.processo.matricula">Matricula</span></th>
-          <th scope="col"><span jhiTranslate="diplomaApp.processo.nome">Nome</span></th>
+          <th scope="col"><span>Matrícula</span></th>
+          <th scope="col"><span>Nome Discente</span></th>
           <th scope="col"><span jhiTranslate="diplomaApp.processo.data">Data</span></th>
-          <th scope="col"><span jhiTranslate="diplomaApp.processo.numeroDaDefesa">Numero Da Defesa</span></th>
-          <th scope="col"><span jhiTranslate="diplomaApp.processo.statusSigaa">Status Sigaa</span></th>
-          <th scope="col"><span jhiTranslate="diplomaApp.processo.numeroSipac">Numero Sipac</span></th>
-          <th scope="col"><span jhiTranslate="diplomaApp.processo.enviadoBiblioteca">Enviado Biblioteca</span></th>
           <th scope="col"><span jhiTranslate="diplomaApp.processo.turma">Turma</span></th>
           <th scope="col"><span jhiTranslate="diplomaApp.processo.entregaDiploma">Entrega Diploma</span></th>
           <th scope="col"></th>
@@ -55,13 +51,9 @@
           <td>{{ processo.matricula }}</td>
           <td>{{ processo.nome }}</td>
           <td>{{ processo.data | formatMediumDate }}</td>
-          <td>{{ processo.numeroDaDefesa }}</td>
-          <td jhiTranslate="{{ 'diplomaApp.Status.' + processo.statusSigaa }}">{{ processo.statusSigaa }}</td>
-          <td>{{ processo.numeroSipac }}</td>
-          <td jhiTranslate="{{ 'diplomaApp.Enviado.' + processo.enviadoBiblioteca }}">{{ processo.enviadoBiblioteca }}</td>
           <td>
             <div *ngIf="processo.turma">
-              <a [routerLink]="['/turma', processo.turma?.id, 'view']">{{ processo.turma?.ano }}</a>
+              <a [routerLink]="['/turma', processo.turma?.id, 'view']">{{ processo.turma?.sigla }} - {{ processo.turma?.ano }}</a>
             </div>
           </td>
           <td>

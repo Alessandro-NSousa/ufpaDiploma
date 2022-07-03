@@ -2,24 +2,24 @@
   "diplomaApp": {
     "entregaDiploma": {
       "home": {
-        "title": "Entrega Diplomas",
-        "refreshListLabel": "Atualizar lista",
-        "createLabel": "Criar novo Entrega Diploma",
-        "createOrEditLabel": "Criar ou editar Entrega Diploma",
-        "notFound": "Nenhum Entrega Diploma encontrado"
+        "title": "Entrega de Diplomas",
+        "refreshListLabel": "Atualizar lista de entregas",
+        "createLabel": "Registar nova Entrega de Diploma",
+        "createOrEditLabel": "Registrar ou editar dados de Entrega",
+        "notFound": "Nenhum registro de entrega encontrado"
       },
-      "created": "Um novo Entrega Diploma foi criado com o identificador {{ param }}",
-      "updated": "Um Entrega Diploma foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Entrega Diploma foi excluído com o identificador {{ param }}",
+      "created": "Um novo registro de Entrega foi criado",
+      "updated": "Dados atualizados",
+      "deleted": "Dados de entrega Excluídos",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Entrega Diploma {{ id }}?"
+        "question": "Tem certeza de que deseja excluir este registro ?"
       },
       "detail": {
-        "title": "Entrega Diploma"
+        "title": "Entrega de Diplomas"
       },
       "id": "ID",
       "dataDeEntrega": "Data De Entrega",
-      "observacoes": "Observacoes"
+      "observacoes": "Observações"
     }
   }
 }

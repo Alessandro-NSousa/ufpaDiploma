@@ -4,18 +4,18 @@
       "home": {
         "title": "Turmas",
         "refreshListLabel": "Atualizar lista",
-        "createLabel": "Criar novo Turma",
-        "createOrEditLabel": "Criar ou editar Turma",
-        "notFound": "Nenhum Turma encontrado"
+        "createLabel": "Cadastrar nova Turma",
+        "createOrEditLabel": "Cadastrar ou editar dados",
+        "notFound": "Nenhuma Turma encontrada"
       },
-      "created": "Um novo Turma foi criado com o identificador {{ param }}",
-      "updated": "Um Turma foi atualizado com o identificador {{ param }}",
-      "deleted": "Um Turma foi excluído com o identificador {{ param }}",
+      "created": "Turma cadastrada com sucesso",
+      "updated": "Dados atualizados",
+      "deleted": "Dados excluídos",
       "delete": {
-        "question": "Tem certeza de que deseja excluir Turma {{ id }}?"
+        "question": "Tem certeza de que deseja excluir a Turma selecionada ?"
       },
       "detail": {
-        "title": "Turma"
+        "title": "Turmas"
       },
       "id": "ID",
       "curso": "Curso",
