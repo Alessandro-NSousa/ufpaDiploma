@@ -51,6 +51,9 @@ public class CacheConfiguration {
             createCache(cm, com.diploma.ufpa.domain.User.class.getName());
             createCache(cm, com.diploma.ufpa.domain.Authority.class.getName());
             createCache(cm, com.diploma.ufpa.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.diploma.ufpa.domain.Processo.class.getName());
+            createCache(cm, com.diploma.ufpa.domain.Turma.class.getName());
+            createCache(cm, com.diploma.ufpa.domain.EntregaDiploma.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

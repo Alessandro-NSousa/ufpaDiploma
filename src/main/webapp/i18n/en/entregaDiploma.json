@@ -1,0 +1,25 @@
+{
+  "diplomaApp": {
+    "entregaDiploma": {
+      "home": {
+        "title": "Entrega Diplomas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entrega Diploma",
+        "createOrEditLabel": "Create or edit a Entrega Diploma",
+        "notFound": "No Entrega Diplomas found"
+      },
+      "created": "A new Entrega Diploma is created with identifier {{ param }}",
+      "updated": "A Entrega Diploma is updated with identifier {{ param }}",
+      "deleted": "A Entrega Diploma is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Entrega Diploma {{ id }}?"
+      },
+      "detail": {
+        "title": "Entrega Diploma"
+      },
+      "id": "ID",
+      "dataDeEntrega": "Data De Entrega",
+      "observacoes": "Observacoes"
+    }
+  }
+}

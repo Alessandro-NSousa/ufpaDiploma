@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20220703024454",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "turma",
+  "fields": [
+    {
+      "fieldName": "curso",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ano",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Turma",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
