@@ -17,6 +17,9 @@
             <column name="curso" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="sigla" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="ano" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
@@ -42,6 +45,7 @@
                   usePreparedStatements="true">
             <column name="id" type="numeric"/>
             <column name="curso" type="string"/>
+            <column name="sigla" type="string"/>
             <column name="ano" type="string"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
         </loadData>

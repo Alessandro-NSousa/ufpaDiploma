@@ -32,6 +32,9 @@ class TurmaResourceIT {
     private static final String DEFAULT_CURSO = "AAAAAAAAAA";
     private static final String UPDATED_CURSO = "BBBBBBBBBB";
 
+    private static final String DEFAULT_SIGLA = "AAAAAAAAAA";
+    private static final String UPDATED_SIGLA = "BBBBBBBBBB";
+
     private static final String DEFAULT_ANO = "AAAAAAAAAA";
     private static final String UPDATED_ANO = "BBBBBBBBBB";
 
@@ -59,7 +62,7 @@ class TurmaResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static Turma createEntity(EntityManager em) {
-        Turma turma = new Turma().curso(DEFAULT_CURSO).ano(DEFAULT_ANO);
+        Turma turma = new Turma().curso(DEFAULT_CURSO).sigla(DEFAULT_SIGLA).ano(DEFAULT_ANO);
         return turma;
     }
 
@@ -70,7 +73,7 @@ class TurmaResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static Turma createUpdatedEntity(EntityManager em) {
-        Turma turma = new Turma().curso(UPDATED_CURSO).ano(UPDATED_ANO);
+        Turma turma = new Turma().curso(UPDATED_CURSO).sigla(UPDATED_SIGLA).ano(UPDATED_ANO);
         return turma;
     }
 
@@ -93,6 +96,7 @@ class TurmaResourceIT {
         assertThat(turmaList).hasSize(databaseSizeBeforeCreate + 1);
         Turma testTurma = turmaList.get(turmaList.size() - 1);
         assertThat(testTurma.getCurso()).isEqualTo(DEFAULT_CURSO);
+        assertThat(testTurma.getSigla()).isEqualTo(DEFAULT_SIGLA);
         assertThat(testTurma.getAno()).isEqualTo(DEFAULT_ANO);
     }
 
@@ -127,6 +131,7 @@ class TurmaResourceIT {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(turma.getId().intValue())))
             .andExpect(jsonPath("$.[*].curso").value(hasItem(DEFAULT_CURSO)))
+            .andExpect(jsonPath("$.[*].sigla").value(hasItem(DEFAULT_SIGLA)))
             .andExpect(jsonPath("$.[*].ano").value(hasItem(DEFAULT_ANO)));
     }
 
@@ -143,6 +148,7 @@ class TurmaResourceIT {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.id").value(turma.getId().intValue()))
             .andExpect(jsonPath("$.curso").value(DEFAULT_CURSO))
+            .andExpect(jsonPath("$.sigla").value(DEFAULT_SIGLA))
             .andExpect(jsonPath("$.ano").value(DEFAULT_ANO));
     }
 
@@ -165,7 +171,7 @@ class TurmaResourceIT {
         Turma updatedTurma = turmaRepository.findById(turma.getId()).get();
         // Disconnect from session so that the updates on updatedTurma are not directly saved in db
         em.detach(updatedTurma);
-        updatedTurma.curso(UPDATED_CURSO).ano(UPDATED_ANO);
+        updatedTurma.curso(UPDATED_CURSO).sigla(UPDATED_SIGLA).ano(UPDATED_ANO);
 
         restTurmaMockMvc
             .perform(
@@ -180,6 +186,7 @@ class TurmaResourceIT {
         assertThat(turmaList).hasSize(databaseSizeBeforeUpdate);
         Turma testTurma = turmaList.get(turmaList.size() - 1);
         assertThat(testTurma.getCurso()).isEqualTo(UPDATED_CURSO);
+        assertThat(testTurma.getSigla()).isEqualTo(UPDATED_SIGLA);
         assertThat(testTurma.getAno()).isEqualTo(UPDATED_ANO);
     }
 
@@ -264,6 +271,7 @@ class TurmaResourceIT {
         assertThat(turmaList).hasSize(databaseSizeBeforeUpdate);
         Turma testTurma = turmaList.get(turmaList.size() - 1);
         assertThat(testTurma.getCurso()).isEqualTo(DEFAULT_CURSO);
+        assertThat(testTurma.getSigla()).isEqualTo(DEFAULT_SIGLA);
         assertThat(testTurma.getAno()).isEqualTo(DEFAULT_ANO);
     }
 
@@ -279,7 +287,7 @@ class TurmaResourceIT {
         Turma partialUpdatedTurma = new Turma();
         partialUpdatedTurma.setId(turma.getId());
 
-        partialUpdatedTurma.curso(UPDATED_CURSO).ano(UPDATED_ANO);
+        partialUpdatedTurma.curso(UPDATED_CURSO).sigla(UPDATED_SIGLA).ano(UPDATED_ANO);
 
         restTurmaMockMvc
             .perform(
@@ -294,6 +302,7 @@ class TurmaResourceIT {
         assertThat(turmaList).hasSize(databaseSizeBeforeUpdate);
         Turma testTurma = turmaList.get(turmaList.size() - 1);
         assertThat(testTurma.getCurso()).isEqualTo(UPDATED_CURSO);
+        assertThat(testTurma.getSigla()).isEqualTo(UPDATED_SIGLA);
         assertThat(testTurma.getAno()).isEqualTo(UPDATED_ANO);
     }
 

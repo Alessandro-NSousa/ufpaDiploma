@@ -122,6 +122,9 @@ public class TurmaResource {
                 if (turma.getCurso() != null) {
                     existingTurma.setCurso(turma.getCurso());
                 }
+                if (turma.getSigla() != null) {
+                    existingTurma.setSigla(turma.getSigla());
+                }
                 if (turma.getAno() != null) {
                     existingTurma.setAno(turma.getAno());
                 }

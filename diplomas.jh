@@ -13,6 +13,7 @@ entity Processo {
 
 entity Turma {
 	curso String
+    sigla String
     ano String
 }
 

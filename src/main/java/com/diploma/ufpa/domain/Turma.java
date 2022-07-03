@@ -24,6 +24,9 @@ public class Turma implements Serializable {
     @Column(name = "curso")
     private String curso;
 
+    @Column(name = "sigla")
+    private String sigla;
+
     @Column(name = "ano")
     private String ano;
 
@@ -53,6 +56,19 @@ public class Turma implements Serializable {
 
     public void setCurso(String curso) {
         this.curso = curso;
+    }
+
+    public String getSigla() {
+        return this.sigla;
+    }
+
+    public Turma sigla(String sigla) {
+        this.setSigla(sigla);
+        return this;
+    }
+
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
     }
 
     public String getAno() {
@@ -93,6 +109,7 @@ public class Turma implements Serializable {
         return "Turma{" +
             "id=" + getId() +
             ", curso='" + getCurso() + "'" +
+            ", sigla='" + getSigla() + "'" +
             ", ano='" + getAno() + "'" +
             "}";
     }

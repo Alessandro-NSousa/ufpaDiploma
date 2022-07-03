@@ -34,6 +34,7 @@
         <tr>
           <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
           <th scope="col"><span jhiTranslate="diplomaApp.turma.curso">Curso</span></th>
+          <th scope="col"><span jhiTranslate="diplomaApp.turma.sigla">Sigla</span></th>
           <th scope="col"><span jhiTranslate="diplomaApp.turma.ano">Ano</span></th>
           <th scope="col"></th>
         </tr>
@@ -44,6 +45,7 @@
             <a [routerLink]="['/turma', turma.id, 'view']">{{ turma.id }}</a>
           </td>
           <td>{{ turma.curso }}</td>
+          <td>{{ turma.sigla }}</td>
           <td>{{ turma.ano }}</td>
           <td class="text-end">
             <div class="btn-group">
