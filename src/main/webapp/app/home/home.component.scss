@@ -6,8 +6,20 @@ Main page styles
   display: inline-block;
   width: 347px;
   height: 497px;
-  background: url('../../content/images/jhipster_family_member_2.svg') no-repeat center top;
+  background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
   background-size: contain;
+}
+
+.m-div {
+  size: 20px;
+  text-align: center;
+}
+
+.img-home {
+  width: 160px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
@@ -17,7 +29,7 @@ Main page styles
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .hipster {
-    background: url('../../content/images/jhipster_family_member_2.svg') no-repeat center top;
+    background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
     background-size: contain;
   }
 }
